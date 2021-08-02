@@ -28,7 +28,7 @@ public class main {
         }
 
         statement.executeQuery("CREATE TABLE NUMBERS (id INTEGER not NULL ," +
-                "value integer not NULL )");
+                "value integer not NULL)");
         beginTime = System.currentTimeMillis();
         for (int i = 0; i < processCapacity; i++) {
             currentNumber = randomNumbers.get(i);
@@ -39,12 +39,12 @@ public class main {
 
         beginTime = System.currentTimeMillis();
         for (int i = 0; i < processCapacity; i++) {
-            statement.executeQuery("SELECT * FROM NUMBERS WHERE id = "+ randomNumbers.get(i));
+            statement.executeQuery("SELECT * FROM NUMBERS WHERE value = "+ randomNumbers.get(i));
         }
         endTime = System.currentTimeMillis();
         System.out.println("Time taken for get process :" + ((double)(endTime-beginTime))/1000);
 
-        statement.executeQuery("DROP TABLE NUMBERS)");
+        statement.executeUpdate("DROP TABLE NUMBERS");
     }
 }
 
