@@ -14,6 +14,8 @@ public class main {
 
         processCapacity = 100000;
         putAndGet(processCapacity, statement);
+        
+        con.close();
     }
 
     public static void putAndGet(int processCapacity, Statement statement) throws SQLException {
