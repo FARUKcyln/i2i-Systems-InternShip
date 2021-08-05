@@ -10,9 +10,7 @@ import (
 
 func main() {
 
-	// os.Open() opens specific file in
-	// read-only mode and this return
-	// a pointer of type os.
+	
 	file, err := os.Open("numbers.txt")
 
 	if err != nil {
