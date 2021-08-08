@@ -1,15 +1,15 @@
 public class Fibonacci {
 
-    static  boolean isPerfectSquare(int x)
+    static  boolean isPerfectSquare(int number)
     {
-        int s = (int) Math.sqrt(x);
-        return (s*s == x);
+        int s = (int) Math.sqrt(number);
+        return (s*s == number);
     }
 
-    static boolean isFibonacciRecursively(int n)
+    static boolean isFibonacciRecursively(int number)
     {
-        return isPerfectSquare(5*n*n + 4) ||
-                isPerfectSquare(5*n*n - 4);
+        return isPerfectSquare(5*number*number + 4) ||
+                isPerfectSquare(5*number*number - 4);
     }
 
     static boolean isFibonacci(int number) {
