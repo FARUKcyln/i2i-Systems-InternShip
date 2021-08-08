@@ -26,16 +26,17 @@ public class Fibonacci {
     }
 
     public static void main(String[] args) {
+        int number = 89;
 
         long beginTime = System.nanoTime();
-        isFibonacci(34);
+        isFibonacci(number);
         long endTime  = System.nanoTime();
 
         long executionTime = (endTime - beginTime) / 1000;
         System.out.println("Dynamic Result : " + executionTime + " second");
 
         beginTime = System.nanoTime();
-        isFibonacciRecursively(34);
+        isFibonacciRecursively(number);
         endTime  = System.nanoTime();
 
         executionTime = (endTime - beginTime) / 1000;
